@@ -1,0 +1,5 @@
+ja_soft_hrm_payroll:
+    resource: "@JASoftHrmPayrollBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
