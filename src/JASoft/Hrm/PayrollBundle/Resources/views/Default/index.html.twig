@@ -1,1 +1,28 @@
-Hello {{ name }}!
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Test</title>
+        {% include 'JASoftHrmPayrollBundle:Default:global_values.html.twig' %}
+        {# <link rel="stylesheet" href="{{ global.resources.baseUrl }}/resources/sisprod.min.css"> #}
+        <link rel="stylesheet" href="{{ global.resources.baseUrl }}/resources/css/custom.min.css">
+        <link rel="stylesheet" href="{{ global.resources.baseUrl }}/resources/css/menu.min.css">
+        <link rel="stylesheet" href="{{ global.resources.baseUrl }}/resources/sisprod.css">
+        <link rel="stylesheet" href="{{ global.resources.baseUrl }}/resources/css/custom.css">
+        <link rel="stylesheet" href="{{ global.resources.baseUrl }}/resources/css/menu.css">
+        <script src="{{ global.resources.baseUrl }}/ext/ext-all.js"></script>
+        <script src="{{ global.resources.baseUrl }}/all-classes.js"></script>
+        <script src="{{ global.resources.baseUrl }}/bootstrap.js"></script>
+        {# <script type="text/javascript" src="{{ global.resources.baseUrl }}/build/production/sisprod/app.js"></script> #}
+        {# <script src="{{ global.resources.baseUrl }}/ext/locale/ext-lan-es.min.js"></script>
+        <script src="{{ global.resources.baseUrl }}/ext/locale/custom-ext-lang-es.min.js"></script>
+        <script src="{{ global.resources.baseUrl }}/ext/extras/functions.min.js"></script>
+        <script src="{{ global.resources.baseUrl }}/ext/extras/vtypes.min.js"></script> #}
+        <script src="{{ global.resources.baseUrl }}/ext/locale/ext-lang-es.js"></script>
+        <script src="{{ global.resources.baseUrl }}/ext/locale/custom-ext-lang-es.js"></script>
+        <script src="{{ global.resources.baseUrl }}/ext/extras/functions.js"></script>
+        <script src="{{ global.resources.baseUrl }}/ext/extras/vtypes.js"></script>
+        <script src="{{ global.resources.baseUrl }}/app.js"></script>
+    </head>
+</html>
