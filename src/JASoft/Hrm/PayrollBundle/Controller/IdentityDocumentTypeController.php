@@ -39,10 +39,28 @@ class IdentityDocumentTypeController extends Controller
     /**
      * Lists all IdentityDocumentType entities.
      *
-     * @Route("/list.htm", name="idt_list")
+     * @Route("/list.htm", name="idt_list", defaults={"_format":"json"})
      * @Method("GET")
+     * Template("JASoftHrmPayrollBundle:Default:json_response.json.twig")
      */
     public function listAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('JASoftHrmPayrollBundle:IdentityDocumentType')->findAll();
+
+        $jsonEntities=$this->get('serializer')->serialize($entities, 'json');
+        return new \Symfony\Component\HttpFoundation\Response($jsonEntities);
+//        return array('data'=>$entities);
+    }
+    
+    /**
+     * Lists all IdentityDocumentType entities.
+     *
+     * @Route("/register.htm", name="idt_register")
+     * @Method("POST")
+     */
+    public function registerAction()
     {
         $em = $this->getDoctrine()->getManager();
 

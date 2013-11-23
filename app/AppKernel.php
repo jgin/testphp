@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle($this),
+            new JASoft\ViringoBundle\JASoftViringoBundle(),
             new JASoft\Hrm\PayrollBundle\JASoftHrmPayrollBundle(),
         );
 
